@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+/*=====  style  =====*/
+body {
+    margin: 0;
+    background-image: url("../img/indeximg/logan-weaver-b76PEyeIptQ-unsplash.jpg");
+	/*font-family: 'Source Sans Pro', 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;*/
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #ffffff;
+    height: 100%;
+}
+
+#background_color {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header {
+	margin: 10px 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #ffffff;
+}
+
+#title {
+/*float: left;*/
+	color: #ffffff;
+	font-size: 30px;
+	margin: 0;
+	font-weight: 800;
+	text-shadow: 1px 2px #a6a6a6;
+}
+
+#menu {
+    float: left;
+    margin-top: 10px;
+}
+
+#menu a{
+	
+	margin-left: 20px;
+	text-decoration-line: none;
+	color: #ffffff;
+	text-shadow: 1px 2px #a6a6a6;
+}
+
+#content {
+	clear: both;
+	margin: 10px 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #ffffff;
+	width: auto;
+	height: 500px;
+}
+
+#coffee-cup-img {
+	margin: 0;
+	width: 250px;
+	height: 250px;
+	margin-top: 50%;
+	margin-left: 25%;
+	
+}
+
+#steam1{
+	background-color: #ffffff;
+	border-radius: 50%;
+	margin-top: -85px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	width: 100px;
+	height: 25px;
+	opacity: 0;
+
+	/* animation */
+	animation: fadeIn-Out 5s ease 0s infinite alternate none running;
+}
+
+#steam2{
+	background-color: #ffffff;
+	border-radius: 50%;
+	margin-top: -100px;
+	width: 200px;
+	height: 50px;
+	opacity: 0;
+
+	/* animation */
+	animation: fadeIn-Out 5s ease 1.5s infinite alternate none running;
+}
+
+/*=====  animation  =====*/
+@keyframes fadeIn-Out {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+/*=====  animation  =====*/
+
+#coffee-cup-img img {
+	/*float: left;*/
+	margin-top: 75px;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+}
+
+#textarea {
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+	color: #ffffff;
+	font-size: 18px;
+	margin-top: 25%;
+	margin-left: -30px;
+	width: auto;
+	height: auto;
+}
+
+#namearea {
+	float: left;
+	font-size: 70px;
+}
+
+#photograph img {
+	float: left;
+	margin-left: 20px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	width: 100px;
+	height: 100px;
+}
+
+#textarea p{
+	margin-top: 150px;
+	clear: both;
+	font-weight: 500;
+	text-shadow: 1px 2px #000000;
+}
+/*=====  style  =====*/
+
+
+/*=====  grid  =====*/
+
+#background_color {
+    display: grid;
+	grid-template-columns: minmax(20px,1fr) minmax(auto,450px) minmax(auto,100px) minmax(auto,450px) minmax(20px,1fr);
+    height: 100%;
+	
+}
+
+#header {
+	grid-column-start: 2;
+	grid-column-end: -2;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: minmax(auto,450px) minmax(auto,100px) minmax(auto,450px);
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+}
+
+#menu {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+}
+
+#underline {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+}
+
+#background_img {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+}
+
+#content {
+	grid-column-start: 2;
+	grid-column-end: -2;
+	grid-row-start: 2;
+	display: grid;
+	grid-template-columns: minmax(auto,450px) minmax(auto,100px) minmax(auto,450px);
+}
+
+#coffee-cup-img {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+}
+
+#textarea {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+}
+
+/*=====  grid  =====*/

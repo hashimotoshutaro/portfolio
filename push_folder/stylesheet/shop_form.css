@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+/*=====  style  =====*/
+body	{margin: 0;
+    background-image: url("../img/indeximg/logan-weaver-b76PEyeIptQ-unsplash.jpg");
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #ffffff;
+}
+
+#content {
+	clear: both;
+	margin: 10px 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #ffffff;
+	width: auto;
+	height: auto;
+}
+
+#input_area {
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+	color: #ffffff;
+	font-size: 18px;
+    padding-top: 20px;
+    padding-left: 20px;
+	width: auto;
+	height: auto;
+}
+
+
+/*=====  style  =====*/
+/*=====  grid  =====*/
+body {
+	display: grid;
+	grid-template-columns: minmax(20px,1fr) minmax(auto,450px) minmax(auto,100px) minmax(auto,450px) minmax(20px,1fr);
+	grid-template-rows: auto auto auto;
+}
+
+#content {
+	grid-column-start: 2;
+	grid-column-end: -2;
+	grid-row-start: 2;
+	display: grid;
+}
+/*=====  grid  =====*/
