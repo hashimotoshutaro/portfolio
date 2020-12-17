@@ -34,11 +34,7 @@ else
     <a href="./index.php">Top</a>
     <a href="./portfolio.php">Portfolio</a>
 </div>
-<div id="underline">
-    <div class="underlines"></div>
-    <div class="underlines"></div>
-    <div class="underlines"></div>
-</div>
+
 </div> <!--header-->
 <div id="content">
 
@@ -68,7 +64,7 @@ else
     <?php
     if($okflag == 0){
         print '<p>アカウントを作成するとデータベースを利用して過去に登録したランニングコースを呼び出すことができます。</p>';
-        print '<p>アカウント作成は<a href="shop_form.html">コチラ</a></p>';
+        print '<p>アカウント作成は<a href="create_acount.html">コチラ</a></p>';
     }
     
     ?>

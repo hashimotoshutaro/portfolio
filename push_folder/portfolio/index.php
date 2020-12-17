@@ -23,11 +23,6 @@ session_regenerate_id(true);
     <a href="./index.php">Top</a>
     <a href="./portfolio.php">Portfolio</a>
 </div>
-<div id="underline">
-    <div class="underlines"></div>
-    <div class="underlines"></div>
-    <div class="underlines"></div>
-</div>
 </div> <!--header-->
 
 <div id="content">
