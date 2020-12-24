@@ -75,8 +75,10 @@ else
 <div id="weight_textarea">
     <p>体重を半角数字で入力して下さい。</p>
     <form name="form1">
-    <textarea name="weight">60</textarea>kg
+    <textarea name="weight"></textarea>kg
     </form>
+    <br/>
+    <button><a href="portfolio.php">リセット</a></button>
 </div>
 <div id="mapcontainer" style="width: 100%;height: 500px;"></div>
 <div id="next_button">
@@ -124,7 +126,7 @@ if($okflag == 1){
 <div id="input_course_textarea">
     <p>呼び出したいコース番号を半角数字で入力して下さい。</p>
     <form name="form2">
-    <textarea name="course">154</textarea>
+    <textarea name="course"></textarea>
     </form>
 </div>
 <input type="button" value="過去に登録したランニングコースを呼び出す" onclick="call_course_func()"><br/><br/>
